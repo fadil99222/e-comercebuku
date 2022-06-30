@@ -14,10 +14,41 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
+Route::get('/',function () {
     return view ('home',[
-        "icon"=>"img/icon_booku.png"
+        "icon"=>"img/icon_booku.png",
+    ]);
 
+});
+Route::get('/admin',function () {
+    return view ('admin',[
+        "icon"=>"img/icon_booku.png",
+    ]);
+
+});
+Route::get('/home',function () {
+    return view ('home',[
+        "icon"=>"img/icon_booku.png",
+    ]);
+
+});
+Route::get('/novel',function () {
+    return view ('novel',[
+        "icon"=>"img/icon_booku.png",
+    ]);
+
+});
+Route::get('/computer',function () {
+    return view ('computer',[
+        "icon"=>"img/icon_booku.png",
+    ]);
+
+});
+
+
+Route::get('/manga', function () {
+    return view ('manga',[
+        "icon"=>"img/icon_booku.png",
     ]);
 
 });

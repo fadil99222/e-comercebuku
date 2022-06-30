@@ -1,0 +1,49 @@
+.buttonnav{
+
+    height: 60px;
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+
+}
+.buttonnav li{
+    margin: 7px;
+    margin-right: 0;
+}
+.buttonnav li a{
+    text-decoration: none;
+}
+.buttonnav li button{
+    padding: 0 5px 0 5px;
+    height: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0,0.3) 0px 0px 2px 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.but-manga i{
+    color: #F94C66;
+
+}
+.but-novel i{
+    color: #1363DF;
+
+}
+.but-IT i{
+    color: #00C897;
+
+}
+.but-home i{
+    color: #47B5FF;
+
+}
+
+.active-but{
+    background-color: #a8dbfd !important;
+    border-bottom: 2px solid rgb(28, 28, 28) !important;
+}
+

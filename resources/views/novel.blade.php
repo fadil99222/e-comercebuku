@@ -12,7 +12,7 @@
 
     <link rel="icon" href="{{$icon}}" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Booku.com</title>
+    <title>booku.com</title>
 </head>
 <body>
     {{-- Navbar --}}
@@ -31,21 +31,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/novel">Novel</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/manga">Manga</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/computer">Buku Computer</a>
-                </li>
-
+                    <a class="nav-link "  href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/novel">Novel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="/manga">Manga</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link "  href="/computer">Buku Computer</a>
+                  </li>
               </ul>
 
-                <a class="nav-link " href="/admin">Login</a>
+                <a class="nav-link " href="#">Login</a>
 
 
           </div>
@@ -91,54 +90,36 @@
       </div>
 
       {{-- Area Navigasi button --}}
-      <div class="container">
-        <h4>Kategori</h4>
-        <ul class="buttonnav">
-            <li>
-                <div> <a href="/"><button class="but-home active-but"><i class="fa-solid fa-house"></i> Home</button></a></div>
-            </li>
-            <li>
-                <div> <a href="/novel"><button class="but-novel"><i class="fa-solid fa-book-open"></i> Novel</button></a></div>
-            </li>
-            <li >
-                <div> <a href="/manga"><button class="but-manga"><i class="fa-solid fa-book"></i> Manga</button></a></div>
-            </li>
-            <li>
-                <div> <a href="/computer"><button class="but-IT"><i class="fa-solid fa-book-atlas"></i> buku Computer</button></a></div>
-            </li>
+        <div class="container">
+            <h4>Kategori</h4>
+            <ul class="buttonnav">
+                <li>
+                    <div> <a href="/"><button class="but-home "><i class="fa-solid fa-house"></i> Home</button></a></div>
+                </li>
+                <li>
+                    <div> <a href="/novel"><button class="but-novel active-but"><i class="fa-solid fa-book-open"></i> Novel</button></a></div>
+                </li>
+                <li >
+                    <div> <a href="/manga"><button class="but-manga"><i class="fa-solid fa-book"></i> Manga</button></a></div>
+                </li>
 
-        </ul>
-      </div>
+                <li>
+                    <div> <a href="/computer"><button class="but-IT"><i class="fa-solid fa-book-atlas"></i> buku Computer</button></a></div>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+
+
+
+
         {{-- content --}}
         <div class="container">
-            <div class="manga-area areabook">
-                <h4>Manga</h4>
-                <div class="wrap">
-                    <div class="item-forsale">
-                        <div class="img-buku">
-                            <img src="img/narto2.jpg" alt="">
-                        </div>
-                        <div class="bawah-item">
-                            <div class="info-buku">
-                                <p class="judul-buku">
-                                    Naruto CH 100
-                                </p>
-                                <p class="penulis-buku">
-                                    masashi kishimoto
-                                </p>
-                                <p class="jenis-buku">
-                                    manga
-                                </p>
-                                <p class="harga-buku">
-                                    Rp.100.000
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="Novel-area areabook">
+            <div class="novel-area areabook">
                 <h4>Novel</h4>
                 <div class="wrap">
 
@@ -164,42 +145,10 @@
 
                         </div>
                     </div>
-
-
                 </div>
 
             </div>
-            <div class="IT-area areabook">
-                <h4>Buku Ilmu komputer</h4>
-                <div class="wrap">
 
-                    <div class="item-forsale">
-                        <div class="img-buku">
-                            <img src="img/narto2.jpg" alt="">
-                        </div>
-                        <div class="bawah-item">
-                            <div class="info-buku">
-                                <p class="judul-buku">
-                                    Naruto CH 100
-                                </p>
-                                <p class="penulis-buku">
-                                    masashi kishimoto
-                                </p>
-                                <p class="jenis-buku">
-                                    manga
-                                </p>
-                                <p class="harga-buku">
-                                    Rp.100.000
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
 
 
         </div>

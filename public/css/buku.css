@@ -1,0 +1,79 @@
+.item-forsale{
+    width: 100%;
+    height: 300px;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0,0.3) 0px 0px 4px 0px;
+}
+
+.img-buku{
+    width: 100%;
+    height: 190px;
+
+
+}
+.img-buku img{
+    width: 100%;
+    height: 100%;
+
+}
+.bawah-item{
+    background-color: #f4f4f4;
+    height: 100%;
+
+}
+.info-buku{
+    width: 100%;
+    height: 18vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    padding: 5px;
+}
+.penulis-buku{
+    position: relative;
+    top: 1px;
+
+    font-size: 8px;
+    margin-bottom: 3px;
+}
+.jenis-buku{
+    font-size: 8px;
+    margin-bottom: 0px;
+}
+.judul-buku{
+    font-size: 12px;
+
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.harga-buku{
+    font-size: 14px;
+
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+    color: #47B5FF;
+
+
+    margin-bottom: 0px;
+}
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,11rem);
+    gap: 10px;
+    background-color: #fff;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0,0.1) 0px 0px 2px 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px 0 10px 0;
+}
