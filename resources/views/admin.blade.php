@@ -26,7 +26,7 @@
                   <a class="nav-link active" aria-current="page" href="/">Info Buku</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/novel">Tambah</a>
+                  <a class="nav-link" href="/tambahbuku">Tambah</a>
                 </li>
               </ul>
           </div>
@@ -61,8 +61,8 @@
                     Tambah Buku
                 </div>
                 <div class="data-buku">
-                    <h6 class="tengah-text">
-                        <button class="but-tambah"><i class="fa-solid fa-plus"></i> Tambah</button>
+                    <h6 class="tengah-text"><a href="/tambahbuku"><button class="but-tambah"><i class="fa-solid fa-plus"></i> Tambah</button></a>
+
                     </h6>
                 </div>
             </div>
@@ -92,16 +92,18 @@
                 <th scope="col">penulis</th>
                 <th scope="col">jenis</th>
                 <th scope="col">Harga</th>
+                <th scope="col">Jumlah buku</th>
                 <th scope="col">Aksi</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
+                <td>Naruto ch 100</td>
+                <td>masashi kishimoto</td>
+                <td>manga</td>
+                <td>Rp.100.000</td>
+                <td>702</td>
                 <td>@mdo</td>
               </tr>
               <tr>
@@ -110,18 +112,11 @@
                 <td>Thornton</td>
                 <td>@fat</td>
                 <td>@fat</td>
+                <td>2142</td>
                 <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
               </tr>
             </tbody>
           </table>
-
     </div>
 
 

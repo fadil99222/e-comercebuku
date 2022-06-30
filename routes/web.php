@@ -52,3 +52,16 @@ Route::get('/manga', function () {
     ]);
 
 });
+
+Route::get('/admin/tambahbuku', function () {
+    return view ('tambahbuku',[
+        "icon"=>"img/icon_booku.png",
+    ]);
+
+});
+Route::get('/buku', function () {
+    return view ('buku',[
+        "icon"=>"img/icon_booku.png",
+    ]);
+
+});
