@@ -1,7 +1,56 @@
-*{
-    margin: 0;
-    padding: 0;
+.info-admin{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
 }
-.nav{
-    background-color: aqua;
+.dimensi-info{
+    width: 300px;
+    height: 120px;
+    margin: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgba(0, 0, 0,0.3) 0px 0px 3px 1px;
 }
+.caption{
+    width: 100%;
+    height: 70%;
+
+}
+.data-buku{
+    width: 100%;
+    height: 30%;
+}
+.data-buku h6{
+    color: #fff;
+}
+.tengah-text{
+    text-align: center;
+}
+.jumlah-transaksi{
+    background-color: #646FD4;
+
+}
+.jumlah-buku{
+    background-color: #5584AC;
+}
+.tambah-buku{
+    background-color: #5AA897;
+}
+.but-tambah{
+    box-shadow: rgba(0, 0, 0,0.3) 0px 0px 3px 1px;
+    border: none;
+    color: #fff;
+    background-color:#47B5FF ;
+    padding: 3px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
