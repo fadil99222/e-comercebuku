@@ -46,4 +46,26 @@
     background-color: #a8dbfd !important;
     border-bottom: 2px solid rgb(28, 28, 28) !important;
 }
+.log-but{
+    width: 100px;
+    padding: 3px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #0775db;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0,0.3) 0px 0px 4px 0px;
+}
+.log-but:hover{
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0,0.3) 0px 0px 5px 2px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
 
