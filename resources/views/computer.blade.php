@@ -5,7 +5,7 @@
     <div class="IT-area areabook">
         <h4>Buku Ilmu komputer</h4>
         <div class="wrap">
-            <div class="item-forsale">
+            <a class="item-forsale" href="/buku">
                 <div class="img-buku">
                     <img src="img/narto2.jpg" alt="">
                 </div>
@@ -24,8 +24,9 @@
                             Rp.100.000
                         </p>
                     </div>
+
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 @endsection

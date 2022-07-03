@@ -6,7 +6,7 @@
             <div class="manga-area areabook">
                 <h4>Manga</h4>
                 <div class="wrap">
-                    <a class="item-forsale" href="/tambagbuku">
+                    <a class="item-forsale" href="/buku">
                         <div class="img-buku">
                             <img src="img/narto2.jpg" alt="">
                         </div>
@@ -34,7 +34,7 @@
                 <h4>Novel</h4>
                 <div class="wrap">
 
-                    <div class="item-forsale">
+                    <a class="item-forsale" href="/buku">
                         <div class="img-buku">
                             <img src="img/narto2.jpg" alt="">
                         </div>
@@ -55,8 +55,7 @@
                             </div>
 
                         </div>
-                    </div>
-
+                    </a>
 
                 </div>
 
@@ -65,7 +64,7 @@
                 <h4>Buku Ilmu komputer</h4>
                 <div class="wrap">
 
-                    <div class="item-forsale">
+                    <a class="item-forsale" href="/buku">
                         <div class="img-buku">
                             <img src="img/narto2.jpg" alt="">
                         </div>
@@ -86,7 +85,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </a>
 
 
                 </div>

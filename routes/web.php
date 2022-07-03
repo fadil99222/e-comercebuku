@@ -59,6 +59,7 @@ Route::get('/admin/tambahbuku', function () {
 Route::get('/buku', function () {
     return view ('buku',[
         "icon"=>"img/icon_booku.png",
+        "title"=> "buku"
     ]);
 
 });

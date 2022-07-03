@@ -6,7 +6,7 @@
         <h4>Novel</h4>
         <div class="wrap">
 
-            <div class="item-forsale">
+            <a class="item-forsale" href="/buku">
                 <div class="img-buku">
                     <img src="img/narto2.jpg" alt="">
                 </div>
@@ -27,7 +27,7 @@
                     </div>
 
                 </div>
-            </div>
+            </a>
         </div>
 
     </div>
