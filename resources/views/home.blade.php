@@ -1,36 +1,6 @@
 @extends('layout.main')
-@section('active-nav')
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="/novel">Novel</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="/manga">Manga</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="/computer">Buku Computer</a>
-        </li>
-    </ul>
-@endsection
-@section('active-but')
-    <ul class="buttonnav">
-        <li>
-            <div> <a href="/"><button class="but-home active-but"><i class="fa-solid fa-house"></i> Home</button></a></div>
-        </li>
-        <li>
-            <div> <a href="/novel"><button class="but-novel"><i class="fa-solid fa-book-open"></i> Novel</button></a></div>
-        </li>
-        <li >
-            <div> <a href="/manga"><button class="but-manga"><i class="fa-solid fa-book"></i> Manga</button></a></div>
-        </li>
-        <li>
-            <div> <a href="/computer"><button class="but-IT"><i class="fa-solid fa-book-atlas"></i> buku Computer</button></a></div>
-        </li>
-    </ul>
-@endsection
+
+
 @section('content')
 
             <div class="manga-area areabook">

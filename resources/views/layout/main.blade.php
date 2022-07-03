@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/button.css" >
     <link rel="icon" href="{{$icon}}" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Booku.com</title>
+    <title>Booku.com || {{$title}}</title>
 </head>
 <body>
     {{-- Navbar --}}
@@ -25,7 +25,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                @yield('active-nav')
+                @include('partials.lsnavbar')
                 <button type="button" class="log-but" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Login
                 </button>
@@ -71,7 +71,7 @@
       {{-- Area Navigasi button --}}
       <div class="container">
         <h4>Kategori</h4>
-        @yield('active-but')
+        @include('partials.lsbut')
       </div>
       {{-- pop-up login/registrasi --}}
       <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

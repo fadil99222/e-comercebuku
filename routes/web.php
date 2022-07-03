@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',function () {
     return view ('home',[
         "icon"=>"img/icon_booku.png",
+        "title"=>"home"
     ]);
 
 });
@@ -26,21 +27,16 @@ Route::get('/admin',function () {
     ]);
 
 });
-Route::get('/home',function () {
-    return view ('home',[
-        "icon"=>"img/icon_booku.png",
-    ]);
-
-});
 Route::get('/novel',function () {
     return view ('novel',[
         "icon"=>"img/icon_booku.png",
+        "title"=>"novel"
     ]);
-
 });
 Route::get('/computer',function () {
     return view ('computer',[
         "icon"=>"img/icon_booku.png",
+        "title"=>"computer"
     ]);
 
 });
@@ -49,6 +45,7 @@ Route::get('/computer',function () {
 Route::get('/manga', function () {
     return view ('manga',[
         "icon"=>"img/icon_booku.png",
+        "title"=>"manga"
     ]);
 
 });
