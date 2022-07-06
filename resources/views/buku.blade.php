@@ -4,19 +4,18 @@
 
 {{-- Gambar --}}
 <div class="container">
-    <div class="grid  " >
-        <div class="row " >
-            <div class=" col img-item  ">
-                <img src="" alt="">
-            </div>
-            <div class="col info-item">
+            <div class="row">
+                <div class="col img-item  ">
+                    <img src="" alt="">
+                </div>
+                <div class="col info-item">
 
-            </div>
-            <div class="col aksi">
+                </div>
+                <div class="col aksi">
 
+                </div>
             </div>
-        </div>
-    </div>
+
 
 </div>
 
