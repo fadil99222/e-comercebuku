@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BuukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,52 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/',function () {
-    return view ('home',[
-        "icon"=>"img/icon_booku.png",
-        "title"=>"home"
-    ]);
+Route::get('/',  [BuukuController::class, 'index']);
+Route::get('/novel',  [BuukuController::class, 'novel']);
+Route::get('/computer',  [BuukuController::class, 'computer']);
+Route::get('/manga',  [BuukuController::class, 'manga']);
 
-});
-Route::get('/admin',function () {
-    return view ('admin',[
-        "icon"=>"img/icon_booku.png",
-    ]);
-
-});
-Route::get('/novel',function () {
-    return view ('novel',[
-        "icon"=>"img/icon_booku.png",
-        "title"=>"novel"
-    ]);
-});
-Route::get('/computer',function () {
-    return view ('computer',[
-        "icon"=>"img/icon_booku.png",
-        "title"=>"computer"
-    ]);
-
-});
+Route::get('/admin',[BuukuController::class,'admin']);
 
 
-Route::get('/manga', function () {
-    return view ('manga',[
-        "icon"=>"img/icon_booku.png",
-        "title"=>"manga"
-    ]);
 
-});
-
-Route::get('/admin/tambahbuku', function () {
-    return view ('tambahbuku',[
-        "icon"=>"img/icon_booku.png",
-    ]);
-
-});
-Route::get('/buku', function () {
-    return view ('buku',[
-        "icon"=>"img/icon_booku.png",
-        "title"=> "buku"
-    ]);
-
-});
+Route::get('/tambahbuku',[BuukuController::class, 'add']);
+Route::post('/store',[BuukuController::class, 'store']);
+Route::get('/buku/{slug}', [BuukuController::class, 'show']);

@@ -6,28 +6,31 @@
         <h4>Manga</h4>
         <div class="wrap">
 
-            <a class="item-forsale" href="/buku">
-                <div class="img-buku">
-                    <img src="img/narto2.jpg" alt="">
-                </div>
-                <div class="bawah-item">
-                    <div class="info-buku">
-                        <p class="judul-buku">
-                            Naruto CH 100
-                        </p>
-                        <p class="penulis-buku">
-                            masashi kishimoto
-                        </p>
-                        <p class="jenis-buku">
-                            manga
-                        </p>
-                        <p class="harga-buku">
-                            Rp.100.000
-                        </p>
-                    </div>
+            @foreach ($manga as $mg)
+                    <a class="item-forsale" href="/buku/{{$mg->id}}">
+                        <div class="img-buku">
+                            <img src="upload/{{$mg->cover}}" alt="">
+                        </div>
+                        <div class="bawah-item">
+                            <div class="info-buku">
+                                <p class="judul-buku">
+                                    {{$mg->judul}}
+                                </p>
+                                <p class="penulis-buku">
+                                    {{$mg->penulis}}
+                                </p>
+                                <p class="jenis-buku">
+                                    {{$mg->jenis}}
+                                </p>
+                                <p class="harga-buku " >
+                                    Rp.{{$mg->harga}}
+                                </p>
+                            </div>
 
-                </div>
-            </a>
+                        </div>
+                    </a>
+
+                    @endforeach
         </div>
 
     </div>

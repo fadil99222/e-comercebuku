@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" >
     <link rel="stylesheet" href="css/buku.css" >
     <link rel="stylesheet" href="css/button.css" >
+    <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/item-desk.css" >
 
     <link rel="icon" href="{{$icon}}" >

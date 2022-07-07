@@ -51,4 +51,4 @@
             @yield('content')
         </div>
 
-@include('partials.hmtl-layout-bott')
+@include('partials.html-layout-bott')
