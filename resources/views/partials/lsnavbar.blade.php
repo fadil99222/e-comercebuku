@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg sticky-top bg-gradient ">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="{{$icon}}" alt="" width="30px"></a>
-      <form class="search cari"role="search">
+      <form action="/" method="GET" class="search cari"role="search">
 
-            <input class="form-search" type="search" placeholder="Cari" aria-label="Search">
+            <input class="form-search" name="search" type="search" placeholder="Cari" aria-label="Search">
             <button class="but-search " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
                 </li>
 
             </ul>
-        
+
             <button type="button" class="log-but" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Login
             </button>

@@ -42,10 +42,11 @@
             <div class="cari-buku">
                 <h3>Masukkan Judul Buku</h3>
                 <div class="container ">
-                    <form class="search cari"role="search">
-                        <input class="form-search" type="search" placeholder="Cari" aria-label="Search">
+                    <form action="/admin" method="GET" class="search cari"role="search">
+
+                        <input class="form-search" name="search" type="search" placeholder="Cari" aria-label="Search">
                         <button class="but-search " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                     </form>
+                  </form>
                 </div>
 
             </div>

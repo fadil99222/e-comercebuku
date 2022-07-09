@@ -14,27 +14,33 @@ use App\Http\Requests\UpdateBuukuRequest;
 class BuukuController extends Controller
 {
 
-    public function index()
+    public function index(Request $req)
     {
+
+        if($req->has('search')){
+            $data = Buuku::where('judul' ,'LIKE','%'. $req->input('search'). '%')->get();
+        }else{
+
+            $data = Buuku::inRandomOrder()->get();
+        }
+
         return view ('home',[
             "icon"=>"img/icon_booku.png",
             "title"=>"home",
-            "data"=>Buuku::all(),
-            "manga"=>Buuku::where('jenis', 'manga')->get(),
-            "novel"=>Buuku::where('jenis', 'novel')->get(),
-            "computer"=>Buuku::where('jenis', 'IT')->get(),
-            // "mangga"=>Buuku::where('jenis','==',"mangga")
+            "data"=>$data
+
         ]);
     }
     public function manga()
     {
+        
         return view ('manga',[
             "icon"=>"img/icon_booku.png",
             "title"=>"manga",
-            "data"=>Buuku::all(),
-            "manga"=>Buuku::where('jenis', 'manga')->get(),
 
-            // "mangga"=>Buuku::where('jenis','==',"mangga")
+            "manga"=>Buuku::inRandomOrder()->where('jenis', 'manga')->get(),
+
+
         ]);
     }
     public function novel()
@@ -44,9 +50,9 @@ class BuukuController extends Controller
             "title"=>"novel",
             "data"=>Buuku::all(),
 
-            "novel"=>Buuku::where('jenis', 'novel')->get(),
+            "novel"=>Buuku::inRandomOrder()->where('jenis', 'novel')->get(),
 
-            // "mangga"=>Buuku::where('jenis','==',"mangga")
+
         ]);
     }
     public function computer()
@@ -56,16 +62,21 @@ class BuukuController extends Controller
             "title"=>"computer",
             "data"=>Buuku::all(),
 
-            "computer"=>Buuku::where('jenis', 'IT')->get(),
-            // "mangga"=>Buuku::where('jenis','==',"mangga")
+            "computer"=>Buuku::inRandomOrder()->where('jenis', 'IT')->get(),
+
         ]);
     }
-    public function admin()
+    public function admin(Request $req)
     {
+        if($req->has('search')){
+            $data = Buuku::where('judul' ,'LIKE','%'. $req->input('search'). '%')->get();
+        }else{
+            $data = Buuku::all();
+        }
         return view ('admin',[
             "icon"=>"img/icon_booku.png",
             "title"=>"admin",
-            "data"=>Buuku::all(),
+            "data"=>$data,
             "jumlah" => Buuku::all()->count(),
             "jumlahpsn" => Pesanan::all()->count()
 
