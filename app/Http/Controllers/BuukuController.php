@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Buuku;
-use Illuminate\Routing\Controller;
+use App\Models\Pesanan;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use App\Http\Requests\StoreBuukuRequest;
 use App\Http\Requests\UpdateBuukuRequest;
 
@@ -65,16 +66,16 @@ class BuukuController extends Controller
             "icon"=>"img/icon_booku.png",
             "title"=>"admin",
             "data"=>Buuku::all(),
-            // "mangga"=>Buuku::where('jenis','==',"mangga")
+            "jumlah" => Buuku::all()->count(),
+            "jumlahpsn" => Pesanan::all()->count()
+
         ]);
     }
     public function add()
     {
         return view ('tambahbuku',[
             "icon"=>"img/icon_booku.png",
-            "title"=>"admin",
-
-            // "mangga"=>Buuku::where('jenis','==',"mangga")
+            "title"=>"add",
         ]);
     }
     public function store(Request $request){
@@ -84,24 +85,25 @@ class BuukuController extends Controller
             $data->cover = $request->file('cover')->getClientOriginalName();
             $data->save();
         }
-        return view ('tambahbuku',[
-            "icon"=>"img/icon_booku.png",
-            "title"=>"admin",
-
-            // "mangga"=>Buuku::where('jenis','==',"mangga")
-        ]);
+        return redirect('/admin');
     }
 
 
 
 
+    public function delete($id){
+        Buuku::where('id',$id)->delete();
+        return redirect('/admin');
+    }
     public function show($slug){
         return view ('buku',[
-            "title"=>"buku",
             "icon"=>"img/icon_booku.png",
+            "title"=>"aa",
+
             "booku"=>Buuku::find($slug)
         ]);
     }
+
 
 
 }

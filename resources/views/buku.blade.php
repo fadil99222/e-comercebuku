@@ -19,14 +19,23 @@
 {{-- Navbar --}}
 @include('partials.lsnavbar')
 
+
 @include('partials.pop-up-form-login')
 {{-- content --}}
 <div class="container py-5">
-
+    <div class="row py-3">
+        <div class="col-12">
+            <a href="/">
+                <button class=" btn btn-primary rounded-3">
+                    close
+                </button>
+            </a>
+        </div>
+    </div>
     <div class="row">
         {{-- gambar --}}
         <div class="col-3 img-item rounded-4 px-0 overflow-hidden max-h-10 ">
-            <img src="../upload/{{$booku->cover}}" class="img-fluid" alt="">
+            <img src="../upload/{{$booku->cover}}" width="100%" height="100%" alt="">
         </div>
         {{-- deskripsi item --}}
         <div class="col-4 offset-1 info-item rounded-4">
@@ -78,12 +87,13 @@
                         <h4>{{$booku->judul}}</h4>
                     </div>
                 </div>
-                <form action="">
+                <form action="/pesanan/{{$booku->id}}" method="POST">
+                    @csrf
                     <div class="row">
                        <div class="col-12">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Masukkan nama</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Nama" required>
+                            <input type="text" class="form-control" name="nama" placeholder="Nama" required>
                           </div>
                        </div>
                     </div>
@@ -91,27 +101,27 @@
                        <div class="col-12">
                         <div class="mb-3">
                             <label for="no-hp" class="form-label">Masukkan nomor telpon</label>
-                            <input type="number" class="form-control" id="no-hp" placeholder="0123456789" required>
+                            <input type="number" class="form-control" name="no_hp" placeholder="0123456789" required>
                           </div>
                        </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <div class="mb-3">
-                                <label for="alamat" class="form-label">Masukkan Almat</label>
-                                <textarea class="form-control" id="Alamat" rows="3" required></textarea>
+                                <label for="alamat" class="form-label">Masukkan Alamat</label>
+                                <textarea name="alamat" class="form-control" name="Alamat" rows="3" required></textarea>
                               </div>
                         </div>
                     </div>
                     <div class="row g-1">
                         <div class="col-12">
                             <p>pilih metode pembayaran</p>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" name="metod" aria-label="Default select example">
                                 <option selected>Bayar Di tempat/COD </option>
-                                <option value="1">Transfer BRI</option>
-                                <option value="2">OVO</option>
-                                <option value="2">Indomaret</option>
-                                <option value="2">Alfamart</option>
+                                <option value="Transfer BRI">Transfer BRI</option>
+                                <option value="OVO">OVO</option>
+                                <option value="Indomaret">Indomaret</option>
+                                <option value="Alfamart">Alfamart</option>
                               </select>
                         </div>
                     </div>

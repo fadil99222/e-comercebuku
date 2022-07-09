@@ -3,6 +3,7 @@
     @include('partials.admin-nav')
     <form action="/store" method="POST" enctype="multipart/form-data">
         @csrf
+        
         <table>
             <tr>
                 <td>judul</td>

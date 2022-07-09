@@ -11,21 +11,22 @@
                     Jumlah buku yang terdaftar di booku.com
                 </div>
                 <div class="data-buku">
+
                     <h6 class="tengah-text">
-                        389 <i class="fa-solid fa-book"></i>
+                        {{$jumlah}} <i class="fa-solid fa-book"></i>
                     </h6>
                 </div>
             </div>
-            <div class="jumlah-transaksi dimensi-info">
+            <a href="/pembelian" class="jumlah-transaksi dimensi-info text-decoration-none text-black">
                 <div class="caption">
-                    Jumlah transaksi yang berlangsung
+                    Jumlah transaksi yang berlangsung Klik Untuk Detail
                 </div>
                 <div class="data-buku">
                     <h6 class="tengah-text">
-                        389 <i class="fa-solid fa-cart-shopping"></i>
+                        {{$jumlahpsn}} <i class="fa-solid fa-cart-shopping"></i>
                     </h6>
                 </div>
-            </div>
+            </a>
             <div class="tambah-buku dimensi-info">
                 <div class="caption">
                     Tambah Buku
@@ -62,21 +63,20 @@
                 <th scope="col">penulis</th>
                 <th scope="col">jenis</th>
                 <th scope="col">Harga</th>
-                <th scope="col">Jumlah buku</th>
                 <th scope="col">Aksi</th>
               </tr>
             </thead>
             <tbody>
                 @foreach ($data as $book)
-                    
+
                 <tr>
-                  <th scope="row"><img src="img/{{$book->cover}}" width="50px" alt=""></th>
+                  <th scope="row"><img src="upload/{{$book->cover}}" width="50px" alt=""></th>
                   <td>{{$book->judul}}</td>
                   <td>{{$book->penulis}}</td>
                   <td>{{$book->jenis}}</td>
                   <td>{{$book->harga}}</td>
-                  <td>702</td>
-                  <td>@mdo</td>
+
+                  <td><a href="/delete/{{$book->id}}" class="btn btn-danger" >Hapus</a></td>
                 </tr>
 
                 @endforeach

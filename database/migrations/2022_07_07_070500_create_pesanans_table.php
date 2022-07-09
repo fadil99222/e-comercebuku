@@ -16,10 +16,11 @@ return new class extends Migration
         Schema::create('pesanans', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->integer('no-telpon');
-            $table->string('alamat');
-            $table->string('metod-bayar');
-            $table->string('buku-pesanan');
+            $table->bigInteger('no_telpon');
+            $table->longText('alamat');
+            $table->string('metod_bayar');
+            $table->string('buku_pesanan');
+            $table->integer('harga_pesanan');
             $table->timestamps();
         });
     }

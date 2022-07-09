@@ -13,7 +13,13 @@
               <a class="nav-link {{($title === "admin") ? 'active' : '' }}" aria-current="page" href="/admin">Info Buku</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link {{($title === "bs") ? 'active' : '' }}" aria-current="page" href="/pembelian">Info Transaksi</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link {{($title === "add") ? 'active' : '' }}" href="/tambahbuku">Tambah</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{($title === "home") ? 'active' : '' }}" href="/">Home</a>
             </li>
           </ul>
       </div>

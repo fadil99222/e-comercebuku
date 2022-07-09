@@ -25,7 +25,7 @@
                 </li>
 
             </ul>
-
+        
             <button type="button" class="log-but" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Login
             </button>
